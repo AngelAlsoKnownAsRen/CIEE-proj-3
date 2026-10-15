@@ -1,22 +1,28 @@
 [gd_scene format=3 uid="uid://cfu5qdrhtiivf"]
 
 [ext_resource type="PackedScene" uid="uid://b6jhki4q075dj" path="res://object scene/player.tscn" id="1_0w7vl"]
+[ext_resource type="PackedScene" uid="uid://ch1vjghbqmyc8" path="res://object scene/environment.tscn" id="2_ylow8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3nda5"]
-size = Vector2(1642, 43)
+size = Vector2(224, 36.25)
 
 [node name="Node2D" type="Node2D" unique_id=104691408]
 
 [node name="Player" parent="." unique_id=69897887 instance=ExtResource("1_0w7vl")]
+z_index = 5
+position = Vector2(530, 793)
 
 [node name="Camera2D" type="Camera2D" parent="Player/CharacterBody2D" parent_id_path=PackedInt32Array(69897887, 323360886) index="2" unique_id=1218760644]
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Player" unique_id=152345200]
+[node name="Environment" parent="." unique_id=468629780 instance=ExtResource("2_ylow8")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=152345200]
 position = Vector2(-468, -247)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/StaticBody2D" unique_id=881392704]
-position = Vector2(468, 499)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=881392704]
+z_index = 5
+position = Vector2(996, 1154.875)
 shape = SubResource("RectangleShape2D_3nda5")
 
 [editable path="Player"]

@@ -1,6 +1,6 @@
 extends CharacterBody2D
-
-@export var SPEED = 500
+@onready var idle = $Idle
+@export var SPEED = 250
 
 func _physics_process(delta: float) -> void:
 	move(delta) # have move constantly process
