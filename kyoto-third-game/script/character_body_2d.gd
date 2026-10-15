@@ -1,14 +1,14 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+@export var SPEED = 500
 
 func _physics_process(delta: float) -> void:
 	move(delta) # have move constantly process
+	move_and_slide()
 	
 func move(_delta: float) -> void:
 		#Create input map for all axis movement (top down!)
-	var direction: Vector2 = Input.get_vector("left", "right", "down", "up")
+	var direction: Vector2 = Input.get_vector("left", "right", "up", "down")
 	
-	velocity.x = direction * SPEED
-	velocity.y = direction * SPEED
-	move_and_slide()
+	velocity.x = direction.x * SPEED
+	velocity.y = direction.y * SPEED

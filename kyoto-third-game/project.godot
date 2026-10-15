@@ -52,6 +52,13 @@ menu_action={
 ]
 }
 
+[layer_names]
+
+2d_render/layer_1="Physics Layer"
+2d_render/layer_2="Mask"
+2d_render/layer_3="Mask"
+2d_render/layer_4="Mask"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
