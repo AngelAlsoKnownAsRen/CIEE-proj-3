@@ -15,10 +15,26 @@ run/main_scene="uid://cfu5qdrhtiivf"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DialogueManager="*uid://c3rodes2l3gxb"
+State="*uid://dbnxic7m83jml"
+
+[dialogue_manager]
+
+editor/wrap_long_lines=true
+runtime/balloon_path="res://dialogue/balloon.tscn"
+editor/layer_5="Actionables"
+editor/layer_1="Environment"
+
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 
@@ -52,12 +68,18 @@ menu_action={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogue/textbox.dialogue")
+
 [layer_names]
 
 2d_render/layer_1="Physics Layer"
 2d_render/layer_2="Mask"
 2d_render/layer_3="Mask"
 2d_render/layer_4="Mask"
+2d_physics/layer_1="Environment"
+2d_physics/layer_5="Actionables"
 
 [physics]
 

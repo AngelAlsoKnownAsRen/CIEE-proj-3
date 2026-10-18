@@ -1,0 +1,32 @@
+~ Sign
+set State.Convo_Complete = false
+if State.sign_smeared == "true"
+	The sign is splattered in ink. => END
+	set State.Convo_Compelte = true
+else:
+	You read the sign
+	Sign: There was a hero who grew up in a small village, far out in the skies... at a very young age she was made to grow up as a result of losing too many people dear to her. Her days of childhood were over the moment she began to wish for others to continue onwards in peace.
+	Sign: Over the years, she began to train harder and harder to maintain the youth and in the end, became heralded as the champion of her people...
+	- Okay... (Continue)
+		Sign: But ultimately... she found herself the most alone after bringing peace to her people. Despite her being immortalized in stone she was never able to find solace and understanding in anyone. To her, she was just a stranger who was gazed upon her people as a god.
+	- Ugh, Boring
+		You wander off mentally and stop reading. => END
+	- Smear the sign in ink
+		set State.sign_smeared = true
+		Like the absolute menace you are, you smear the text of your story in ink that will last for generations. => END
+		set State.Convo_Compelte = true
+	Sign: Some wonder where she is today... the last known sighting was over #(6!c years ago in the a%*2h1 continent.
+	=> END
+	set State.Convo_Compelte = true
+~ No_Return
+set State.convo_complete  = false
+There's no point turning back now. => END
+set State.Convo_Complete = true
+~ Kitty
+You see a familiar Kat in front of you.
+- Pet it
+	Cat: Purr :3
+- Ignore it
+	Cat: D: => END
+- Pray
+	Cat: So you do remember. Very well, it's been a long time old friend. You must go forth and rediscover what happened to our home, find the next path onwards.  => END
