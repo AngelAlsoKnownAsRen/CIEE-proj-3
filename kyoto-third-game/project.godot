@@ -17,8 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DialogueManager="*uid://c3rodes2l3gxb"
 State="*uid://dbnxic7m83jml"
+LevelSwap="*uid://dqfv5ftim3rgo"
+DialogueManager="*uid://c3rodes2l3gxb"
 
 [dialogue_manager]
 
