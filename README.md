@@ -9,7 +9,7 @@ Made by **Angel (Aka Himari)**
 
 ## How to Play
 - **Play in Browser:** [Click here](https://starsofthecities.itch.io/a-silly-test-game) to open in itch.io
-
+- Puzzle Journel for Class [Click Here](https://docs.google.com/document/d/1ui6_INAjEkkrNdONAks8n6ma7UnsHIAi2ARfpfKmRDs/edit?usp=sharing)
 ---
 
 ## Artistic Statement
